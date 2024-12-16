@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.navbar .icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .icons i {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+      display: none;
+  }
+}
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .product-row1 {
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between;
+        }
+      .product-row2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+      .product-row3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+      .product-row4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 5px;
+           
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0 10px;
+        }
+
+        .product-price {
+            color: #28a745;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .shop-now {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .shop-now:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+  <script src="script.js"></script>
+
+  <!-- Navbar -->
+   <header>
+  <nav class="navbar">
+    <div class="logo">ecokart</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="new.html">New Arrivals</a>
+        <a href="mens.html">For Him</a>
+        <a href="women.html">For Her</a>
+    </div>
+    <div class="icons">
+        <i class="fa fa-search"></i>
+       <a href="cart.html" style="text-decoration: none;color: inherit;"> <i class="fa fa-shopping-cart"></i></a>
+        <div class="dropdown">
+            <i class="fa fa-user"></i>
+            <div class="dropdown-content">
+                <a href="sign.html">Login</a>
+                <a href="signup.html">Signup</a>
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+<div class="box" style="height: 60px;"></div>
+    <div class="container">
+        <h1>Mens clothing</h1>
+        <div class="product-row1">
+            <div class="product-card">
+                <img src="me1.webp" alt="Product 1">
+                <div class="product-name">Product 1</div>
+                <div class="product-price">$99.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="m2.webp" alt="Product 2">
+                <div class="product-name">Product 2</div>
+                <div class="product-price">$149.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="me3.webp" alt="Product 3">
+                <div class="product-name">Product 3</div>
+                <div class="product-price">$199.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+        </div>
+        <div class="product-row2">
+            <div class="product-card">
+                <img src="me4.webp" alt="Product 4">
+                <div class="product-name">Product 4</div>
+                <div class="product-price">$79.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="me5.webp" alt="Product 5">
+                <div class="product-name">Product 5</div>
+                <div class="product-price">$129.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="me6.webp" alt="Product 6">
+                <div class="product-name">Product 6</div>
+                <div class="product-price">$189.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+        </div>
+        <div class="product-row3">
+            <div class="product-card">
+                <img src="me7.jpg" alt="Product 7">
+                <div class="product-name">Product 7</div>
+                <div class="product-price">$109.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="me8.webp" alt="Product 8">
+                <div class="product-name">Product 8</div>
+                <div class="product-price">$139.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="me9.webp" alt="Product 9">
+                <div class="product-name">Product 9</div>
+                <div class="product-price">$179.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+        </div>
+        <div class="product-row4">
+            <div class="product-card">
+                <img src="me10.webp" alt="Product 10">
+                <div class="product-name">Product 10</div>
+                <div class="product-price">$89.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="me11.webp" alt="Product 11">
+                <div class="product-name">Product 11</div>
+                <div class="product-price">$159.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <img src="me12.webp" alt="Product 12">
+                <div class="product-name">Product 12</div>
+                <div class="product-price">$199.99</div>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const products = document.querySelectorAll(".shop-now");
+            products.forEach(product => {
+                product.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    alert("Thank you for shopping with us!");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

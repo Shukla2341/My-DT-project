@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Shopping Cart</h1>
+        <a href="index.html" class="back-button">Continue Shopping</a>
+    </header>
+    <main class="cart-container">
+        <!-- Cart Items -->
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="me3.webp" alt="Product 1" class="product-image">
+                <div class="item-details">
+                    <h2>Product Name</h2>
+                    <p class="price">$25.99</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" value="1" min="1" class="quantity-input">
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="sh4.webp" alt="Product 2" class="product-image">
+                <div class="item-details">
+                    <h2>Product Name 2</h2>
+                    <p class="price">$15.49</p>
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" value="1" min="1" class="quantity-input">
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Summary -->
+        <aside class="cart-summary">
+            <h2>Summary</h2>
+            <div class="summary-details">
+                <p>Subtotal: <span>$41.48</span></p>
+                <p>Tax: <span>$3.99</span></p>
+                <p>Total: <span>$45.47</span></p>
+            </div>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </aside>
+    </main>
+    
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Logo and About -->
+                <div class="footer-section about">
+                    <h3>ecoSphere</h3>
+                    <p>Your one-stop shop for the best products at the best prices. Shop with us and experience excellence.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Customer Support -->
+                <div class="footer-section support">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Subscribe -->
+                 <div class="footer-section subscribe">
+                    <h4>Subscribe</h4>
+                    <p>Sign up for the latest updates and offers.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div> 
+    
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 ecoSphere. All rights reserved. | Designed by InnoSphere</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.navbar .icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .icons i {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+      display: none;
+  }
+}
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+       
+    </style>
+</head>
+<body>
+  
+
+  <!-- Navbar -->
+   <header>
+  <nav class="navbar">
+    <div class="logo">ecokart</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="new.html">New Arrivals</a>
+        <a href="mens.html">For Him</a>
+        <a href="women.html">For Her</a>
+    </div>
+    <div class="icons">
+        <i class="fa fa-search"></i>
+       <a href="cart.html" style="text-decoration: none;color: inherit;"> <i class="fa fa-shopping-cart"></i></a>
+        <div class="dropdown">
+            <i class="fa fa-user"></i>
+            <div class="dropdown-content">
+                <a href="sign.html">Login</a>
+                <a href="signup.html">Signup</a>
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+<div class="B" style="height: 60PX;"></div>
+<h1 style="text-align: center;">COMING SOON...</h1>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+.brand-title {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.return-button {
+    text-decoration: none;
+    color: #fff;
+    background: #0e0b0a;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.return-button:hover {
+    background: #0e0b0a;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section, .values-section, .commitment-section {
+    margin-bottom: 1.5em;
+}
+
+h2, h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+ul {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+ul li strong {
+    color: #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+}

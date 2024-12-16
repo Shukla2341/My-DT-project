@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <script src="script.js"></script>
+
+  <!-- Navbar -->
+   <header>
+  <nav class="navbar">
+    <div class="logo">ecokart</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="new.html">New Arrivals</a>
+        <a href="mens.html">For Him</a>
+        <a href="women.html">For Her</a>
+    </div>
+    <div class="icons">
+        <i class="fa fa-search"></i>
+       <a href="cart.html" style="text-decoration: none;color: inherit;"> <i class="fa fa-shopping-cart"></i></a>
+        <div class="dropdown">
+            <i class="fa fa-user"></i>
+            <div class="dropdown-content">
+                <a href="sign.html">Login</a>
+                <a href="signup.html">Signup</a>
+            </div>
+        </div>
+    </div>
+</nav>
+</header>
+    <!-- <header>
+      
+    <nav class="navbar">
+        <div class="logo">ecokart</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for clothing..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-links">
+            <a href="/sign.html">Sign In</a>
+            
+            <a href="#" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i> Cart
+            </a>
+        </div>
+    </nav>
+
+
+      </header> -->
+      <div class="banner" style="color: black;">
+        
+        <button class="button" value="button" style="margin-top: 500PX;margin-left: 140px; "><a href="shop.html" style="text-decoration: none;color: inherit;"><B>SHOP NOW</B></a></button>
+      </div>
+      <div class="organic" style="text-align: center;">
+        <img src="images\freepik-export-20241120100857Y7WM.png" alt="Centered Image">
+      </div>
+      <div class="info" >
+        <h1 style="text-align: center;">not us.</h1>
+        <h4 style="text-align: center;">fashion pollutes the planet.<br>not us. we make it <em> better</em>.</h4>
+        <br>
+        <div style="text-align: center;">
+        <button class="button" style="align-items: center;" value="proof"><a href="proof.html" style="text-decoration: none;color: inherit;"><h4>HERE'S PROOF</h4></a></button>
+      </div>
+      </div>
+      <div style="margin-left: 20px; margin-top: 10px;"><h2>Shirts that speak</h2>
+        <p>Smart +sustainable</p>
+      </div>
+      <!-- <div class="boxes">
+
+        <div class="box1">
+          
+          <div class="box1-image" style="background-image: url('1.webp');"></div>
+          
+      </div>
+      <div class="box2">
+          
+        <div class="box1-image" style="background-image: url('2.webp');"></div>
+        
+    </div>
+    <div class="box3">
+          
+      <div class="box1-image" style="background-image: url('3.webp');"></div>
+      
+  </div>
+  <div class="box4">
+          
+    <div class="box1-image" style="background-image: url('4.webp');"></div>
+    
+</div>
+       
+        
+       
+        
+        
+      </div>
+       -->
+       
+       
+       
+         <div class="fashion-gallery">
+           <!-- Box 1 -->
+           <div class="product-box box1">
+             <a href="product-detail-page.html?product=GardenShirtDress" class="image-wrapper">
+               <div class="image" style="background-image: url('1.webp');"></div>
+             </a>
+             <div class="details">
+               <h3 class="product-name">Lavender cuban shirt</h3>
+               <p class="price">Rs 999</p>
+               <p class="mrp">MRP, inclusive of all taxes</p>
+               <button class="see-more" onclick="Shopnow('Garden Shirt Dress')"><a href="mens.html" style="color: inherit;text-decoration: none;">SHOP NOW</a></button>
+             </div>
+           </div>
+       
+           <!-- Box 2 -->
+           <div class="product-box box2">
+             <a href="product-detail-page.html?product=SummerLinenShirt" class="image-wrapper">
+               <div class="image" style="background-image: url('2.webp');"></div>
+             </a>
+             <div class="details">
+               <h3 class="product-name">Black knit shirt</h3>
+               <p class="price">Rs 699</p>
+               <p class="mrp">MRP, inclusive of all taxes</p>
+               <button class="see-more" onclick="seeMore('Summer Linen Shirt')">SHOP NOW</button>
+             </div>
+           </div>
+       
+           <!-- Box 3 -->
+           <div class="product-box box3">
+             <a href="product-detail-page.html?product=ClassicDenimJacket" class="image-wrapper">
+               <div class="image" style="background-image: url('3.webp');"></div>
+             </a>
+             <div class="details">
+               <h3 class="product-name">Denim popower shirt</h3>
+               <p class="price">Rs 999</p>
+               <p class="mrp">MRP, inclusive of all taxes</p>
+               <button class="see-more" onclick="seeMore('Classic Denim Jacket')">SHOP NOW</button>
+             </div>
+           </div>
+       
+           <!-- Box 4 -->
+           <div class="product-box box4">
+             <a href="product-detail-page.html?product=BohemianDress" class="image-wrapper">
+               <div class="image" style="background-image: url('4.webp');"></div>
+             </a>
+             <div class="details">
+               <h3 class="product-name">Dual strip cuban shirt</h3>
+               <p class="price">Rs 899</p>
+               <p class="mrp">MRP, inclusive of all taxes</p>
+               <button class="see-more" onclick="seeMore('Bohemian Dress')">SHOP NOW</button>
+             </div>
+           </div>
+         </div>
+       
+         <script src="script.js"></script>
+       
+       
+    
+      
+
+      <br>
+      <div style="margin-left: 10px;"><h2>Dresses for days.</h2>
+        <p>and nights and brunches & pool parties too!</p>
+
+      </div>
+      <!-- <div class="boxes2">
+        <div class="box4">
+          <div class="box1-image" style="background-image: url('w1.webp');"></div>
+        </div>
+        <div class="box5">
+          <div class="box1-image" style="background-image: url('w2.webp');"></div>
+        </div>
+        <div class="box6">
+          <div class="box1-image" style="background-image: url('w3.webp');"></div>
+        </div>
+        <div class="box7">
+          <div class="box1-image" style="background-image: url('w4.webp');"></div>
+        </div>
+      </div>
+       -->
+       <div class="fashion-gallery">
+        <!-- Box 1 -->
+        <div class="product-box box1">
+          <a href="product-detail-page.html?product=GardenShirtDress" class="image-wrapper">
+            <div class="image" style="background-image: url('w1.webp');"></div>
+          </a>
+          <div class="details">
+            <h3 class="product-name">Garden Shirt Dress</h3>
+            <p class="price">Rs 1299</p>
+            <p class="mrp">MRP, inclusive of all taxes</p>
+            <button class="see-more" onclick="seeMore('Garden Shirt Dress')">SHOP NOW</button>
+          </div>
+        </div>
+    
+        <!-- Box 2 -->
+        <div class="product-box box2">
+          <a href="product-detail-page.html?product=SummerLinenShirt" class="image-wrapper">
+            <div class="image" style="background-image: url('w2.webp');"></div>
+          </a>
+          <div class="details">
+            <h3 class="product-name">Bloom sac dress</h3>
+            <p class="price">Rs 1999</p>
+            <p class="mrp">MRP, inclusive of all taxes</p>
+            <button class="see-more" onclick="seeMore('Summer Linen Shirt')">SHOP NOW</button>
+          </div>
+        </div>
+    
+        <!-- Box 3 -->
+        <div class="product-box box3">
+          <a href="product-detail-page.html?product=ClassicDenimJacket" class="image-wrapper">
+            <div class="image" style="background-image: url('w3.webp');"></div>
+          </a>
+          <div class="details">
+            <h3 class="product-name">Black side slick-shirt</h3>
+            <p class="price">Rs 1599</p>
+            <p class="mrp">MRP, inclusive of all taxes</p>
+            <button class="see-more" onclick="seeMore('Classic Denim Jacket')">SHOP NOW</button>
+          </div>
+        </div>
+    
+        <!-- Box 4 -->
+        <div class="product-box box4">
+          <a href="product-detail-page.html?product=BohemianDress" class="image-wrapper">
+            <div class="image" style="background-image: url('w4.webp');"></div>
+          </a>
+          <div class="details">
+            <h3 class="product-name">Bohemian Dress</h3>
+            <p class="price">Rs 1999</p>
+            <p class="mrp">MRP, inclusive of all taxes</p>
+            <button class="see-more" onclick="seeMore('Bohemian Dress')">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="tagline">
+        <h2>India's most sustainable fashion brand.</h2>
+        <p style="margin-top: 10px;">x clothes, x customers, n countries, 1 mission since 2024.</p>
+        <h4 style="margin-top: 10px;">"make it better"</h4>
+        <button class="button" style="align-items: center; margin-top: 20px;" value="proof"><a href="journey.html" style="text-decoration: none;color: inherit;"><h4>THE ecoSphere JOURNEY</h4></a></button>
+      </div>
+      <br>
+      <div style="margin-left: 10px;" >
+        <h2>Such a tees.</h2>
+        <p>there's a reason why we've sold 1000s.</p>
+      </div>
+
+      <!-- <div class="boxes3">
+        <div class="box8">
+          <div class="box1-image" style="background-image: url('t1.jpg');"></div>
+        </div>
+        <div class="box9">
+          <div class="box1-image" style="background-image: url('t2.webp');"></div>
+        </div>
+        <div class="box10">
+          <div class="box1-image" style="background-image: url('t3.jpg');"></div>
+        </div>
+        <div class="box11">
+          <div class="box1-image" style="background-image: url('t4.webp');"></div>
+        </div>
+      </div> -->
+      <div class="fashion-gallery">
+        <div class="box box1">
+          <div class="image" style="background-image: url('t1.jpg');"></div>
+          <div class="details">Product 1</div>
+          <button class="see-more" onclick="seeMore('Product 1')">See More</button>
+        </div>
+        <div class="box box2">
+          <div class="image" style="background-image: url('t2.webp');"></div>
+          <div class="details">Product 2</div>
+          <button class="see-more" onclick="seeMore('Product 2')">See More</button>
+        </div>
+        <div class="box box3">
+          <div class="image" style="background-image: url('t3.jpg');"></div>
+          <div class="details">Product 3</div>
+          <button class="see-more" onclick="seeMore('Product 3')">See More</button>
+        </div>
+        <div class="box box4">
+          <div class="image" style="background-image: url('t4.webp');"></div>
+          <div class="details">Product 4</div>
+          <button class="see-more" onclick="seeMore('Product 4')">See More</button>
+        </div>
+      </div>
+      <br>
+      <div style="margin-left: 10px;" >
+        <h2>Dresses</h2>
+        
+      </div>
+      <div class="fashion-gallery">
+        <div class="box box1">
+          <div class="image" style="background-image: url('e1.webp');"></div>
+          <div class="details">Product 1</div>
+          <button class="see-more" onclick="seeMore('Product 1')">Shop comfort</button>
+        </div>
+        <div class="box box2">
+          <div class="image" style="background-image: url('e2.webp');"></div>
+          <div class="details">Product 2</div>
+          <button class="see-more" onclick="seeMore('Product 2')">Shop chic</button>
+        </div>
+        <div class="box box3">
+          <div class="image" style="background-image: url('e3.webp');"></div>
+          <div class="details">Product 3</div>
+          <button class="see-more" onclick="seeMore('Product 3')">Shop organic tops</button>
+        </div>
+        
+        
+      </div>
+      <div class="fashion-gallery">
+        <div class="box box1">
+          <div class="image" style="background-image: url('m1.webp');"></div>
+          <div class="details">Product 1</div>
+          <button class="see-more" onclick="seeMore('Product 1')">Shop casual</button>
+        </div>
+        <div class="box box2">
+          <div class="image" style="background-image: url('m2.webp');"></div>
+          <div class="details">Product 2</div>
+          <button class="see-more" onclick="seeMore('Product 2')">Shop Basics</button>
+        </div>
+        <div class="box box3">
+          <div class="image" style="background-image: url('m3.webp');"></div>
+          <div class="details">Product 3</div>
+          <button class="see-more" onclick="seeMore('Product 3')">Shop Sleepwear</button>
+        </div>
+        
+        
+      </div>
+
+      <div class="tagline">
+        <h1>planet diaries</h1>
+        <p style="margin-top: 10px;">our journal of how-to-do-better</p>
+       
+        <button class="button" style="align-items: center; margin-top: 20px;" value="proof"><a href="planet.html" style="text-decoration: none;color: inherit;"><h4>Read all posts</h4></a></button>
+      </div>
+
+
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and About -->
+            <div class="footer-section about">
+                <h3>ecokart</h3>
+                <p>Your one-stop shop for the best products at the best prices. Shop with us and experience excellence.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="footer-section support">
+                <h4>Customer Support</h4>
+                <ul>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+
+            <!-- Subscribe -->
+             <div class="footer-section subscribe">
+                <h4>Subscribe</h4>
+                <p>Sign up for the latest updates and offers.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div> 
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 ecoSphere. All rights reserved. | Designed by InnoSphere</p>
+        </div>
+    </footer>
+      
+
+      
+</body>
+</html>
